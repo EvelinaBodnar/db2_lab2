@@ -32,7 +32,7 @@ def statistical_query():
     '''
     cursor.execute(select_query)
 
-    with open('result_lab2.csv', 'w', encoding="utf-8") as new_csv_file:
+    with open('result.csv', 'w', encoding="utf-8") as new_csv_file:
         csv_writer = csv.writer(new_csv_file)
         csv_writer.writerow(['Область', 'Рік', 'Максимальний бал з фізики'])
         for row in cursor:
